@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student portal</title>
+        <link rel="icon" type="image/png" href="favicon2.jpeg">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-blue-100">
+    <nav class="bg-[#059669] text-white p-4">
+        <div class="flex justify-between items-center">
+            <h1 class=" text-2xl font-bold">STUDENT PORTAL</h1>
+            <ul class="flex gap-5">
+                <li><a href="home.html" class="hover:text-blue-300">Home</a></li>
+                <li><a href="registration.html" class="hover:text-blue-300">Registration</a></li>
+                <li><a href="student.html" class="hover:text-blue-300">Students</a></li>
+                 <li><a href="#contact" class="hover:text-blue-300">Contacts</a></li>
+                 <li>
+    <a href="portfolio.html" class="hover:text-blue-300">
+        Portfolio
+    </a>
+</li>
+                 <li><button id="darkBtn"
+class="bg-black text-white px-4 py-2 rounded-lg">
+Dark Mode
+</button></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--hero section-->
+    <section class="text-center py-20 px-5">
+
+    <h1 id="heroTitle"
+class="text-4xl md:text-6xl font-bold text-blue-600">
+        Student Registration System
+    </h1>
+</br></br>
+    <p class="text-gray-600 mt-4 text-lg">
+        Welcome to the Student Registration System, a modern and user-friendly platform designed to simplify the process of student enrollment and academic record management. This portal helps students register easily, manage their personal information, and access important academic details through a secure and organized digital system.
+    </p>
+</br></br>
+    <div class="flex justify-center items-center gap-6 mt-6">
+
+        <a href="registration.html"
+           class="bg-[#22c55e] text-black px-6 py-3 rounded-lg hover:bg-[#15803d] transition">
+            Register Now
+        </a>
+
+        <a href="student.html"
+           class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+            View Students
+        </a>
+        <button onclick="changeText()"
+class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">
+
+Learn More
+
+</button>
+<script>
+
+function changeText(){
+
+document.getElementById("heroTitle")
+.innerText =
+"Modern Responsive Student Management Portal";
+
+}
+
+</script>
+
+    </div>
+</section>
+<section id ="about" class="bg-[#fafafa] text-center py-20 px-5">
+    <h1 class="text-4xl darkText md:text-6xl font-bold text-[#1e1b4b]">
+        About our portal
+    </h1>
+    <p class="text-gray-600 darkText text-lg">
+      This portal helps students register for courses
+and allows institutions to manage student details
+efficiently and securely.
+    </p>
+</section>
+<!--slider-->
+<section id="gallery" class="box bg-blue-300 p-8 rounded-lg shadow-lg m-6">
+
+
+<h2 class="text-4xl font-bold text-center text-white mb-8">
+
+   Welcome to our onine student portal!!
+
+</h2 >   
+<section class="py-20 bg-black">
+
+
+<div class="max-w-2xl mx-auto">
+
+    <div class="relative overflow-hidden rounded-xl shadow-lg">
+
+        <div id="portraitSlider" class="flex transition-transform duration-500">
+
+            <img src="s1.jpeg"
+            class="w-full h-96 object-contain flex-shrink-0">
+
+            <img src="s2.jpg"
+            class="w-full h-96 object-contain flex-shrink-0">
+
+            <img src="s3.png"
+            class="w-full h-96 object-contain flex-shrink-0">
+            
+
+        </div>
+
+        <button onclick="prevPortrait()"
+        class="absolute left-4 top-1/2 -translate-y-1/2 bg-black text-white px-4 py-2 rounded-full">
+
+        ❮
+
+        </button>
+
+        <button onclick="nextPortrait()"
+        class="absolute right-4 top-1/2 -translate-y-1/2 bg-black text-white px-4 py-2 rounded-full">
+
+         ❯   
+
+        </button>
+
+    </div>
+    </div>
+</section>
+</section>
+<!-- FEATURES SECTION -->
+
+<div class="text-center mt-2 my-4">
+    <button onclick="toggleFeatures()"
+        class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700">
+        Hide / Show Features
+    </button>
+</div>
+
+<section class="py-16 px-6">
+
+<h2 class="text-4xl font-bold text-center text-blue-600 mb-10">
+    Portal Features
+</h2>
+
+<div id="features" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Card 1 -->
+    <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+
+        <h3 class="text-2xl font-bold mb-3">
+            Registration
+        </h3>
+
+        <p class="cardText text-gray-600">
+            Easy online student registration process with a simple and
+            user-friendly form.
+        </p>
+
+        <button onclick="alert('Student Registration Module')"
+            class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+
+            View
+
+        </button>
+
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+
+        <h3 class="text-2xl font-bold mb-3">
+            Records
+        </h3>
+
+        <p class="cardTextext-gray-600">
+            Manage student information, academic details and records
+            efficiently.
+        </p>
+
+        <button onclick="alert('Student Records Module')"
+            class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+
+            View
+
+        </button>
+
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card bg-white p-6 rounded-lg shadow-lg text-center">
+
+        <h3 class="text-2xl font-bold mb-3">
+            Responsive Design
+        </h3>
+
+        <p class="cardText text-gray-600">
+            Works smoothly on desktop, tablet and mobile devices.
+        </p>
+
+        <button onclick="alert('Responsive Layout')"
+            class="mt-4 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">
+
+            View
+
+        </button>
+
+    </div>
+
+</div>
+<script>
+function toggleFeatures() {
+    document.getElementById("features")
+        .classList.toggle("hidden");
+}
+</script>
+
+
+
+
+<section id="contact"
+class="mt-20 py-16 px-6 bg-blue-50 text-center">
+
+    <h2 class="text-3xl font-bold text-blue-600">
+        Contact Us
+    </h2>
+
+    <p class="mt-4 text-gray-600 text-lg darkText">
+        Have questions or need assistance? Feel free to contact us.
+        We are always ready to help students with registration
+        and academic support.
+    </p>
+
+    <div class="mt-6 text-gray-700 darkText">
+        <p>Email: support@studentportal.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: Siliguri, West Bengal, India</p>
+    </div>
+
+</section>
+<script>
+document.getElementById("darkBtn")
+.addEventListener("click", function () {
+
+    document.body.classList.toggle("bg-gray-900");
+    document.body.classList.toggle("text-white");
+
+    document.getElementById("about")
+    .classList.toggle("bg-gray-800");
+    document.getElementById("contact")
+    .classList.toggle("bg-gray-800");
+    let texts = document.querySelectorAll(".darkText");
+
+texts.forEach(function(text){
+    text.classList.toggle("text-gray-600");
+    text.classList.toggle("text-white");
+});
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(function(card){
+        card.classList.toggle("bg-white");
+        card.classList.toggle("bg-gray-700");
+        card.classList.toggle("text-white");
+    });
+    let cardTexts = document.querySelectorAll(".cardText");
+
+cardTexts.forEach(function(text){
+    text.classList.toggle("text-gray-600");
+    text.classList.toggle("text-gray-200");
+});
+
+});
+let portraitIndex = 0;
+
+const portraitSlider =
+document.getElementById("portraitSlider");
+
+const portraitTotal =
+portraitSlider.children.length;
+
+function showPortrait(){
+
+    portraitSlider.style.transform =
+    `translateX(-${portraitIndex * 100}%)`;
+
+}
+
+function nextPortrait(){
+
+    portraitIndex++;
+
+    if(portraitIndex >= portraitTotal){
+
+        portraitIndex = 0;
+
+    }
+
+    showPortrait();
+
+}
+
+function prevPortrait(){
+
+    portraitIndex--;
+
+    if(portraitIndex < 0){
+
+        portraitIndex = portraitTotal - 1;
+
+    }
+
+    showPortrait();
+
+}
+
+setInterval(nextPortrait,4000);
+</script>
+
+</body>
+
+</html>

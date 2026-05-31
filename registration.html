@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-blue-100 py-10">
+
+    <div class="max-w-[650px] mx-auto bg-white p-6 rounded-lg shadow-lg">
+
+        <h2 class="bg-[#ef4444] text-3xl font-bold text-center text-white mb-6">
+            Student Registration Form
+        </h2>
+
+        <form id="studForm" action="response.html" method="post">
+
+            <div class="grid md:grid-cols-2 gap-5">
+                <div>
+                    <label class="font-semibold">Student Name<span class="text-red-500">*</span></label>
+
+                    <input type="text"
+                        name="studname" required class="w-full border border-gray-300 p-2 rounded-lg mt-2">
+                </div>
+                <div>
+                    <label class="font-semibold">Contact Number<span class="text-red-500">*</span></label>
+                    <input type="tel" id="mobile"  name="contact"  pattern="[1-9][0-9]{9}"  placeholder="10 digit mobile number"    required     class="w-full border border-gray-300 p-2 rounded-lg mt-2">
+                     
+                </div>
+                <div>
+                    <label class="font-semibold">Age<span class="text-red-500">*</span></label>
+
+                    <input type="text"
+                        name="age"
+                        class="w-full border border-gray-300 p-2 rounded-lg mt-2" required>
+                </div>
+                <div>
+                    <label class="font-semibold">Qualification</label>
+
+                    <select name="qualification"
+                        class="w-full border border-gray-300 p-2 rounded-lg mt-2">
+                        <option>BCA</option>
+                        <option>BSc</option>
+                        <option>BTech</option>
+                        <option>MCA</option>
+                        <option>MBA</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <label class="font-semibold">Address</label>
+                    <textarea
+                        name="address"
+                        rows="3"
+                        class="w-full border border-gray-300 p-2 rounded-lg mt-2"></textarea>
+                </div>
+                <div >
+                    <label class="font-semibold">
+                        Gender <span class="text-red-500">*</span>
+                    </label>
+                    <div class="flex gap-5 mt-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gender" value="Male" required> Male</label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gender" value="Other">
+                            Other
+                        </label>
+
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+
+                    <label class="font-semibold">Skills Known</label>
+
+                    <div class="flex  gap-5 mt-2">
+
+                        <label >
+                            <input type="checkbox" name="skills[]" value="HTML">
+                            HTML
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="skills[]" value="CSS">
+                            CSS
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="skills[]" value="JavaScript">
+                            JavaScript
+                        </label>
+
+                        <label >
+                            <input type="checkbox" name="skills[]" value="PHP">
+                            PHP
+                        </label>
+
+                        <label >
+                            <input type="checkbox" name="skills[]" value="Python">
+                            Python
+                        </label>
+
+                    </div>
+                </div>
+                <div class="md:col-span-2 text-center mt-4">
+                    <button type="submit"
+                        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition ">Submit </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
